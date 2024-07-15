@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.app.json",
+      "./tsconfig.node.json"
+    ]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:promise/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:vitest/legacy-all",
+    "plugin:jest-extended/all",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-refresh"],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "vitest/prefer-expect-assertions": [
+      2,
+      { "onlyFunctionsWithAsyncKeyword": true }
+    ]
+  }
+}
