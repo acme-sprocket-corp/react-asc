@@ -10,15 +10,16 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict",
-    "plugin:promise/recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:unicorn/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:compat/recommended",
     "plugin:vitest/legacy-all",
     "plugin:jest-extended/all",
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
+    "plugin:jest-formatting/strict",
     "plugin:prettier/recommended"
   ],
   "ignorePatterns": ["dist", ".eslintrc.cjs"],
@@ -28,6 +29,13 @@
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "kebabCase",
+        "ignore": ["App.tsx"]
+      }
     ],
     "vitest/prefer-expect-assertions": [
       2,
