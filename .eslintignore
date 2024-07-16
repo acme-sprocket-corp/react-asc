@@ -3,3 +3,4 @@ vitest.config.ts
 src/vite-env.d.ts
 cypress.config.js
 cypress.config.ts
+cypress/support/e2e.ts

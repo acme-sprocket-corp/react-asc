@@ -24,6 +24,7 @@
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:jest-formatting/strict",
+    "plugin:cypress/recommended",
     "plugin:storybook/recommended",
     "plugin:prettier/recommended"
   ],
@@ -41,7 +42,7 @@
       "error",
       {
         "case": "kebabCase",
-        "ignore": ["App.tsx", "**/e2e.ts"]
+        "ignore": ["App.tsx"]
       }
     ],
     "vitest/prefer-expect-assertions": [
