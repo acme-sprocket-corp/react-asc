@@ -1,3 +1,10 @@
 {
-  "words": ["compat", "storysource", "stylelint", "tsbuildinfo"]
+  "words": [
+    "autodocs",
+    "compat",
+    "sonarjs",
+    "storysource",
+    "stylelint",
+    "tsbuildinfo"
+  ]
 }
