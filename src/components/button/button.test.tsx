@@ -30,4 +30,10 @@ describe("button", () => {
 
     expect(screen.getByRole("button", { name: text })).toBeInTheDocument();
   });
+
+  it("has correct type", () => {
+    render(<Button onClickHandler={vi.fn()} text="button" />);
+
+    expect(screen.getByRole("button")).toHaveAttribute("type", "button");
+  });
 });
